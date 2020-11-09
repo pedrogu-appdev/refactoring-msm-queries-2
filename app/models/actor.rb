@@ -11,6 +11,7 @@
 #  updated_at :datetime         not null
 #
 class Actor < ApplicationRecord
+  #has_many(:characters, { :classs_name => "Character", :foreign_key => "actor_id"})
   def characters
     my_id = self.id
 
